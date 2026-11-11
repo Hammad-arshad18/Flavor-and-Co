@@ -3,16 +3,14 @@ declare(strict_types=1);
 
 /**
  * Site-wide settings and content.
- * Only verified details are used here: business name, activity, phone,
+ * Only verified details are used here: business name, activity,
  * email and city. Trade licence numbers and dates are deliberately excluded.
  */
 
 const SITE_NAME        = 'Flavour & Co.';
 const SITE_LEGAL_NAME  = 'Flavour & Co Restaurants Management L.L.C';
 const SITE_TAGLINE     = 'Restaurant management · Dubai, UAE';
-const SITE_PHONE       = '+971 58 864 9391';
-const SITE_PHONE_LINK  = '+971588649391';
-const SITE_EMAIL       = 'Flavourco2025@gmail.com';
+const SITE_EMAIL       = 'info@flavournco.com';
 const SITE_CITY        = 'Dubai';
 const SITE_COUNTRY     = 'United Arab Emirates';
 const SITE_ADDRESS     = 'Dubai, United Arab Emirates';

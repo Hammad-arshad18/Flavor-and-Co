@@ -35,7 +35,6 @@ $jsonLd = [
             'url'        => $baseUrl . '/',
             'logo'       => $baseUrl . '/assets/img/icon-512.png',
             'email'      => SITE_EMAIL,
-            'telephone'  => SITE_PHONE,
             'address'    => [
                 '@type'           => 'PostalAddress',
                 'addressLocality' => SITE_CITY,
@@ -161,10 +160,6 @@ $jsonLd = [
             <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to Arabic">
                 <span class="lang-toggle-label" data-lang-label>AR</span>
             </button>
-            <a class="header-phone" href="tel:<?= e(SITE_PHONE_LINK) ?>" aria-label="<?= e(SITE_PHONE) ?>">
-                <?= icon('phone', 18) ?>
-                <span dir="ltr"><?= e(SITE_PHONE) ?></span>
-            </a>
             <a class="btn btn-sm btn-solid-light header-cta" href="./contact" data-i18n="nav.enquire">Enquire</a>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-i18n-aria="nav.open" data-nav-toggle>
                 <span class="nav-toggle-open"><?= icon('menu', 26) ?></span>
@@ -187,7 +182,6 @@ $jsonLd = [
             </ul>
         </nav>
         <div class="mobile-nav-foot">
-            <a href="tel:<?= e(SITE_PHONE_LINK) ?>"><span dir="ltr"><?= e(SITE_PHONE) ?></span></a>
             <a href="mailto:<?= e(SITE_EMAIL) ?>"><span dir="ltr"><?= e(SITE_EMAIL) ?></span></a>
             <p data-i18n="address"><?= e(SITE_ADDRESS) ?></p>
         </div>

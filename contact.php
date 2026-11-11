@@ -4,7 +4,7 @@ declare(strict_types=1);
 session_start();
 
 $pageTitle       = 'Contact — Flavour & Co. Restaurants Management, Dubai';
-$pageDescription = 'Contact Flavour & Co Restaurants Management L.L.C in Dubai, United Arab Emirates. Phone, email and enquiry form.';
+$pageDescription = 'Contact Flavour & Co Restaurants Management L.L.C in Dubai, United Arab Emirates. Email and enquiry form.';
 $pageClass       = 'page-contact';
 $pageKey         = 'contact';
 
@@ -138,7 +138,7 @@ require __DIR__ . '/inc/header.php';
             <h1 id="page-title" data-i18n-html="contact.hero.title">Let’s talk about<br>your restaurant.</h1>
             <p class="lede" data-i18n="contact.hero.lede">
                 Tell us where the restaurant is and what you have in mind. We will reply
-                directly by phone or email.
+                directly by email.
             </p>
         </div>
     </section>
@@ -154,13 +154,6 @@ require __DIR__ . '/inc/header.php';
                 </p>
 
                 <ul class="contact-list">
-                    <li class="contact-item">
-                        <span class="contact-item-icon"><?= icon('phone', 20) ?></span>
-                        <div>
-                            <span class="contact-item-label" data-i18n="contact.label.phone">Phone</span>
-                            <p class="contact-item-value"><a href="tel:<?= e(SITE_PHONE_LINK) ?>"><span dir="ltr"><?= e(SITE_PHONE) ?></span></a></p>
-                        </div>
-                    </li>
                     <li class="contact-item">
                         <span class="contact-item-icon"><?= icon('mail', 20) ?></span>
                         <div>

@@ -17,10 +17,6 @@ require_once __DIR__ . '/functions.php';
                 <span data-i18n="cta.button">Start a conversation</span>
                 <?= icon('arrow-right', 18, 'icon-arrow') ?>
             </a>
-            <a class="cta-link" href="tel:<?= e(SITE_PHONE_LINK) ?>">
-                <?= icon('phone', 18) ?>
-                <span dir="ltr"><?= e(SITE_PHONE) ?></span>
-            </a>
             <a class="cta-link" href="mailto:<?= e(SITE_EMAIL) ?>">
                 <?= icon('mail', 18) ?>
                 <span dir="ltr"><?= e(SITE_EMAIL) ?></span>

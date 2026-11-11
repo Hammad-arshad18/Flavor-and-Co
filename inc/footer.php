@@ -37,7 +37,6 @@
             <div class="footer-col">
                 <h2 class="footer-heading" data-i18n="footer.contact">Contact</h2>
                 <ul>
-                    <li><a href="tel:<?= e(SITE_PHONE_LINK) ?>"><span dir="ltr"><?= e(SITE_PHONE) ?></span></a></li>
                     <li><a href="mailto:<?= e(SITE_EMAIL) ?>"><span dir="ltr"><?= e(SITE_EMAIL) ?></span></a></li>
                     <li><a href="./contact" data-i18n="footer.send">Send an enquiry</a></li>
                 </ul>
