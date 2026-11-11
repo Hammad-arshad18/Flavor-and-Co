@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = 'Flavour & Co. — Restaurant Management in Dubai, UAE';
-$pageDescription = 'Flavour & Co Restaurants Management L.L.C is a restaurant management company in Dubai, United Arab Emirates. Operations, kitchens, people, guest experience and commercial oversight.';
+$pageDescription = 'Flavour & Co manages restaurants in Dubai — operations, kitchens, people, guest experience and commercial oversight.';
 $pageClass       = 'page-home';
 $pageKey         = 'home';
 

@@ -17,6 +17,14 @@ const SITE_CITY        = 'Dubai';
 const SITE_COUNTRY     = 'United Arab Emirates';
 const SITE_ADDRESS     = 'Dubai, United Arab Emirates';
 const SITE_YEAR        = 2026;
+/** Canonical production origin (no trailing slash). Used for OG/canonical when available. */
+const SITE_ORIGIN      = 'https://flavournco.com';
+/** Optional X/Twitter handle including @, e.g. '@flavournco'. Leave empty if none. */
+const SITE_TWITTER     = '';
+const OG_IMAGE_PATH    = '/assets/img/og-default.jpg';
+const OG_IMAGE_WIDTH   = 1200;
+const OG_IMAGE_HEIGHT  = 630;
+const OG_IMAGE_ALT     = 'Upscale restaurant dining room with wood tables, black seating and warm lighting';
 
 /**
  * SMTP delivery for the contact form.

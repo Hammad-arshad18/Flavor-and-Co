@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = 'Services — Flavour & Co. Restaurants Management';
-$pageDescription = 'Restaurant management services in Dubai: operations, concept and menu, kitchen management, people and training, guest experience and commercial oversight.';
+$pageDescription = 'Dubai restaurant management: operations, concept and menu, kitchen, people and training, guest experience and commercial oversight.';
 $pageClass       = 'page-services';
 $pageKey         = 'services';
 
