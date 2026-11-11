@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /inc/
+Disallow: /design-system/
+Disallow: /router.php

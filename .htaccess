@@ -1,0 +1,56 @@
+# Flavour & Co. — Apache front controller
+# Mirrors router.php: clean URLs, .php redirects, custom 404.
+
+Options -MultiViews
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # If the site lives in a subdirectory, set the base path here, e.g. RewriteBase /flavour/
+    RewriteBase /
+
+    # ---------------------------------------------------------------------------
+    # Protect private paths
+    # ---------------------------------------------------------------------------
+    RewriteRule ^(inc|design-system)(/|$) - [F,L]
+
+    # ---------------------------------------------------------------------------
+    # Canonical URLs
+    # ---------------------------------------------------------------------------
+
+    # Strip trailing slashes (keep the home page as /).
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+    # Redirect /index and /index.php to /
+    RewriteRule ^index\.php$ / [R=301,L]
+    RewriteRule ^index$ / [R=301,L]
+
+    # Redirect /page.php → /page so the extension never appears in the browser.
+    RewriteCond %{THE_REQUEST} \s/+([a-z0-9-]+)\.php[\s?] [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # ---------------------------------------------------------------------------
+    # Serve real files and directories as-is (CSS, images, fonts, etc.)
+    # ---------------------------------------------------------------------------
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # ---------------------------------------------------------------------------
+    # Clean routes → PHP files
+    # ---------------------------------------------------------------------------
+    RewriteRule ^about/?$ about.php [L]
+    RewriteRule ^services/?$ services.php [L]
+    RewriteRule ^contact/?$ contact.php [L]
+
+    # Anything else that is not a real file: branded 404
+    RewriteRule ^ 404.php [L]
+</IfModule>
+
+# Custom error document for direct Apache 404s (e.g. missing assets).
+ErrorDocument 404 /404.php
+
+# Deny directory listings.
+Options -Indexes
